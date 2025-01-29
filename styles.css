@@ -154,6 +154,10 @@ footer {
     background: #0da410; /* Download button background */
 }
 
+.read-button {
+    background: #af0000; /* Download button background */
+}
+
 .button i {
     margin-right: 5px;
 }
