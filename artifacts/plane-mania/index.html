@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plane Mania</title>
+  <link rel="icon" href="images/ico.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section id="game-shell" class="game-shell" aria-label="Plane Mania">
+      <div id="game" class="game">
+        <img id="homeBG" class="layer stretch visible" src="images/wuhuMenu.png" alt="">
+        <img id="waterBG" class="layer stretch hidden" src="images/waterBG.png" alt="">
+        <img id="bg" class="layer tall-bg hidden" src="images/wuhuBG.png" alt="">
+        <img id="islandOutline" class="layer island hidden" src="images/wuhuOutline.png" alt="">
+        <img id="island" class="layer island faded hidden" src="images/wuhu.png" alt="">
+        <img id="deck" class="layer deck hidden" src="images/deck.png" alt="">
+        <img id="heightBar" class="layer hud meter hidden" src="images/heightBar.png" alt="">
+        <img id="arrowHead" class="layer hud arrow hidden" src="images/heightArrowhead.png" alt="">
+        <img id="propeller" class="layer plane part hidden" src="images/propeller.png" alt="">
+        <img id="planeSprite" class="layer plane part hidden" src="images/behindEmpty.png" alt="">
+        <img id="startImg" class="layer center-banner hidden" src="images/start.png" alt="Start">
+        <img id="finishImg" class="layer center-banner hidden" src="images/finish.png" alt="Finish">
+        <img id="youWinImg" class="layer win-banner hidden" src="images/youWin.png" alt="You Win">
+        <img id="bigPlane" class="layer big-plane hidden" src="images/reflectedPlane.png" alt="">
+        <img id="howToBG" class="layer stretch hidden" src="images/howToPlayImagePC.png" alt="How to play">
+        <img id="flyingPlane" class="layer menu-plane visible" src="images/planeFront1.png" alt="">
+
+        <div id="dynamicLayer" class="dynamic-layer"></div>
+
+        <div id="menuTitle" class="menu-copy visible">
+          <p class="subtitle">Alexander Shemaly Presents</p>
+          <h1>Plane Mania</h1>
+          <p class="subtitle">Python/Kivy Original (2021) • Browser remake by Codex (2026)</p>
+        </div>
+
+        <div id="menuButtons" class="menu-buttons visible">
+          <button id="playBtn" class="primary-btn" type="button">Play Game</button>
+          <button id="infoBtn" class="primary-btn" type="button">How to Play</button>
+        </div>
+
+        <button id="pauseBtn" class="icon-btn hidden" type="button" aria-label="Pause game">
+          <img id="pauseImg" src="images/pauseBtn.png" alt="">
+        </button>
+
+        <div id="hud" class="hud-copy">
+          <p id="distanceLabel">Distance Travelled: 0 m</p>
+          <p id="scoreLabel">Score: 0</p>
+          <p id="altLabel">Altitude: 500 m</p>
+        </div>
+
+        <div id="pauseOverlay" class="overlay-panel">
+          <h2>Game Paused</h2>
+          <button id="resumeBtn" class="primary-btn" type="button">Resume</button>
+          <button id="quitBtn" class="primary-btn" type="button">Quit</button>
+        </div>
+
+        <div id="summaryOverlay" class="overlay-panel summary-panel">
+          <h2>Game Summary</h2>
+          <p id="summaryDistance"></p>
+          <p id="summaryScore"></p>
+          <p id="summaryBonus"></p>
+          <p id="summaryTotal"></p>
+          <div class="summary-actions">
+            <button id="playAgainBtn" class="primary-btn" type="button">Play Again</button>
+            <button id="returnMenuBtn" class="primary-btn" type="button">Return to Menu</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

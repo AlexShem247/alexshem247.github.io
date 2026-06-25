@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snappy Triggers</title>
+  <link rel="icon" href="Images/logo.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <section id="menu-screen" class="screen active">
+      <video id="intro-video" autoplay muted loop playsinline>
+        <source src="Images/intro_video.mp4" type="video/mp4">
+      </video>
+      <p class="subtitle">Python Arcade Shooter by Alexander Shemaly (2020) • Browser remake by Codex (2026)</p>
+      <div class="menu-actions">
+        <button data-action="play">Play Game</button>
+        <button data-action="rules">Rules</button>
+        <button data-action="options">Options</button>
+        <button data-action="credits">Credits</button>
+      </div>
+    </section>
+
+    <section id="game-screen" class="screen">
+      <div id="canvas-shell">
+        <canvas id="game-canvas" width="1280" height="720"></canvas>
+      </div>
+    </section>
+  </div>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-panel">
+      <h2 id="modal-title"></h2>
+      <div id="modal-body"></div>
+      <div id="modal-actions" class="modal-actions"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

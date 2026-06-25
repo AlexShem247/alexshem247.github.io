@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maze Raycasting Game</title>
+  <link rel="icon" type="image/png" href="assets/wall1.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="menu-active">
+  <main class="app-shell">
+    <section id="menu-screen" class="screen">
+      <div class="menu-hero">
+        <video id="menu-video" class="menu-video" autoplay muted loop playsinline>
+          <source src="assets/raycastingDemo.webm" type="video/webm">
+        </video>
+        <div class="menu-video-overlay"></div>
+        <div class="panel hero-panel">
+          <p class="eyebrow">Java raycasting original (2023) | Browser remake by Codex (2026)</p>
+          <h1>Maze Raycasting Game</h1>
+          <p class="lede">
+            Navigate a random maze, collect every coin and stay ahead of the zombies.
+          </p>
+          <div class="meta-grid">
+            <div>
+              <span class="meta-label">By</span>
+              <span id="byline">Alexander Shemaly</span>
+            </div>
+            <div>
+              <span class="meta-label">Controls</span>
+              <span>WASD move, Mouse look, Esc pause</span>
+            </div>
+          </div>
+          <div class="actions">
+            <button id="start-campaign" class="primary-btn" type="button">Start Game</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="round-screen" class="screen hidden">
+      <div class="panel round-panel">
+        <div class="round-copy">
+          <p class="eyebrow" id="round-label">Round 1</p>
+          <h2 id="round-title">Maze Preview</h2>
+          <p id="round-text">
+            Collect every coin and avoid the enemies.
+          </p>
+          <div class="round-stats">
+            <span id="round-coins">Coins: 0</span>
+            <span id="round-enemies">Enemies: 0</span>
+          </div>
+          <div class="actions">
+            <button id="play-round" class="primary-btn" type="button">Enter Maze</button>
+            <button id="back-to-title" class="ghost-btn" type="button">Back</button>
+          </div>
+        </div>
+        <div class="preview-wrap">
+          <canvas id="preview-canvas" width="420" height="320" aria-label="Maze preview"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section id="game-screen" class="screen hidden">
+      <div class="game-frame">
+        <canvas id="game-canvas" width="960" height="720" aria-label="Maze Raycasting Game"></canvas>
+        <div class="hud">
+          <span id="hud-round">Round 1</span>
+          <span id="hud-coins">Coins Left: 0</span>
+          <span id="hud-health">Health: 100</span>
+        </div>
+        <div id="overlay" class="overlay hidden">
+          <div class="panel overlay-panel">
+            <p class="eyebrow" id="overlay-kicker">Paused</p>
+            <h2 id="overlay-title">Game Paused</h2>
+            <p id="overlay-text">Resume when ready.</p>
+            <div id="overlay-minimap-wrap" class="overlay-minimap-wrap hidden">
+              <canvas id="overlay-minimap" width="320" height="240" aria-label="Pause minimap"></canvas>
+            </div>
+            <div class="actions" id="overlay-actions"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

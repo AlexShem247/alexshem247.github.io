@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +9,23 @@
     <link rel="icon" href="assets/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <div class="container">
-        <img src="assets/Profile.png" class="image" id="profile">
+        <img src="assets/Profile.png" class="image" id="profile" alt="">
         <div class="text">
             <h1>Welcome to My Website!</h1>
             <p>
-                Hi there! I am Alexander Shemaly, a passionate Computing student at Imperial College London,
-                currently at my <b>third year</b> of study. I have a strong interest in artificial intelligence, 
-                software engineering, and algorithm design. Over the years, I have developed a solid foundation 
-                in creating immersive games, designing AI-driven applications, and enhancing user experiences, 
-                which I am excited to continue building upon as I seek new challenges and opportunities.
+                Hi there! I'm Alexander Shemaly, a software engineer and Imperial College London graduate with a passion
+                for building interesting things.
             </p>
             <p>
-                On this site, you will find a showcase of my projects, a detailed overview of my skills, and a bit more
-                about my journey in the world of computing. I am actively looking for a work placement to apply my knowledge
-                in a real-world setting, collaborate with experienced professionals, and contribute to impactful projects.
+                This website serves as an archive of projects I've created over the years, including games, AI systems
+                and experimental software. Some were built for university, others simply for fun or to explore new
+                ideas, but each one taught me something new along the way.
             </p>
             <p>
-                Feel free to explore my work, learn more about me, and do not hesitate to get in touch if you'd like to
-                discuss any potential opportunities!
+                Feel free to explore the projects and see some of the things I've enjoyed building.
             </p>
             <div class="contact-info">
                 <p><b>Contacts:</b>
@@ -45,121 +43,33 @@
         </div>
     </div>
 
-        <div class="project">
-            <div class="project-header">
-                <div class="language" style="background: #4686b8">
-                    <i class="fa-brands fa-python"></i> Python
-                </div>
-                <div class="project-type" style="background: #52bda9">
-                    <i class="fas fa-users"></i>University Group Project
-                </div>
-                <div class="date">
-                    <i class="fas fa-calendar-alt"></i> June 2024
-                </div>
-            </div>
-            <h2 class="project-name">Wise Browse - An AI-Powered browser for Desktop</h2>
-            <div class="project-images">
-                <img src="assets/wiseBrowsePromotional.png" class="image-1">
-                <img src="assets/wiseBrowseHome.png" class="image-2">
-            </div>
-            <div class="project-description">
-                <p>
-                    Wise Browse is a user-friendly cross-platform desktop web browser designed to assist older
-                    adults in navigating the internet with ease. By integrating advanced artificial
-                    intelligence and a minimalist interface, Wise Browse provides step-by-step
-                    guidance tailored to user needs, making digital interactions more accessible
-                    and intuitive.
-                </p>
-                <p>
-                    <i>Application written in Python using the PyQt5 GUI toolkit, OpenAI API and Supabase.</i>
-                </p>
-    
-                <p>
-                    Wise Browse is developed to address the challenges faced by older adults when using the
-                    internet. The project is a collaborative effort by Imperial College London students
-                    aimed at enhancing digital literacy and confidence. 
-                </p>
-
-                <div class="features-container">
-                    <h2>Key Features</h2>
-                    <ul class="features-list">
-                        <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>AI-Powered Assistance:</b> Leveraging OpenAI technology, Wise Browse's AI assistant reads and interprets website content to offer contextual help. It provides step-by-step instructions that adjust based on user actions and queries, making online tasks easier to complete.</li>
-                        <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Minimalist Interface:</b> The browser features a clean, simple interface to reduce cognitive load and emphasise essential functions. A streamlined side menu gives users easy access to the AI assistant and other key features.</li>
-                        <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Community-Driven FAQs:</b> Wise Browse includes a feature that displays Frequently Asked Questions (FAQs) from other users about the current website. This functionality fosters a sense of community and helps users resolve common issues more effectively.</li>
-                    </ul>
-                </div>
-
-            </div>
-            <div class="project-buttons">
-                <a href="https://github.com/AlexShem247/wise-browse" class="button github-button" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="https://github.com/AlexShem247/wise-browse/releases" class="button download-button" target="_blank">
-                    <i class="fas fa-download"></i> Download
-                </a>
+    <div class="project-toolbar">
+        <div class="toolbar-group">
+            <label for="project-filter">Filter</label>
+            <div class="filter-buttons" id="project-filter">
+                <button type="button" class="filter-button active" data-filter="featured"><i class="fas fa-heart"></i> Featured</button>
+                <button type="button" class="filter-button" data-filter="playable"><i class="fas fa-gamepad"></i> Playable</button>
+                <button type="button" class="filter-button" data-filter="personal"><i class="fas fa-user"></i> Personal</button>
+                <button type="button" class="filter-button" data-filter="university-group"><i class="fas fa-users"></i> University Group</button>
+                <button type="button" class="filter-button" data-filter="all">All</button>
             </div>
         </div>
-
-        <div class="project">
-            <div class="project-header">
-                <div class="language" style="background: #4686b8">
-                    <i class="fa-brands fa-python"></i> Python
-                </div>
-                <div class="project-type">
-                    <i class="fas fa-user"></i> Individual Project
-                </div>
-                <div class="date">
-                    <i class="fas fa-calendar-alt"></i> December 2024
-                </div>
-            </div>
-            <h2 class="project-name">Wine Origin Classifier: Predicting Country of Origin of Wines using ML and LLMs</h2>
-            <div class="project-images">
-                <img src="assets/decision_tree.png" class="image-3">
-                <embed src="assets/report.pdf" width="600" height="500" type="application/pdf">
-            </div>
-            <div class="project-description">
-                <p>
-                    The Wine Origin Classifier is a machine learning project aimed at predicting the country of origin of wines based on a dataset of wine reviews. 
-                    The goal was to build a classification model using both traditional machine learning techniques and advanced natural language processing (NLP) methods, 
-                    particularly Large Language Models (LLMs), to extract features from the wine descriptions.
-                </p>
-                <p>
-                    <i>Developed in Python using Scikit-learn, Pandas, OpenAI API and Graphviz libraries.</i>
-                </p>
-            
-                <p>
-                    The dataset includes five columns: Country (target), Description, Points, Price, and Variety. 
-                    A key challenge was the data imbalance, where certain countries (such as Spain, France, and Italy) were underrepresented. 
-                    I addressed this by using weighted evaluation metrics and experimenting with different feature engineering and model selection techniques to improve the performance on underrepresented classes.
-                </p>
-            
-                <p>
-                    A major component of the project was utilising NLP techniques to extract features from the textual descriptions of the wines. 
-                    These features included flavor profiles, texture, acidity, and aging potential, which vary across regions and can indicate the country of origin.
-                    I also explored how LLMs can be integrated into traditional ML pipelines to enhance text feature extraction.
-                </p>
-            
-                <div class="features-container">
-                    <h2>Key Features</h2>
-                    <ul class="features-list">
-                        <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Data Preprocessing and Imbalance Handling:</b> Dealt with class imbalance through weighted metrics and techniques to improve model fairness.</li>
-                        <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Textual Feature Extraction:</b> Used NLP techniques to extract relevant features from the wine descriptions, such as flavor profiles, texture, and region-specific terms.</li>
-                        <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Large Language Model Integration:</b> Explored the use of LLMs for enhanced feature extraction and improved classification performance.</li>
-                        <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Model Evaluation:</b> Evaluated multiple models, focusing on performance across all classes, particularly underrepresented ones.</li>                    </ul>
-                </div>
-    
-            </div>
-            <div class="project-buttons">
-                <a href="https://github.com/AlexShem247/wine-origin-classifier" class="button github-button" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="https://github.com/AlexShem247/wine-origin-classifier/blob/main/report/report.pdf" class="button read-button" target="_blank">
-                    <i class="fa-solid fa-file"></i> Read the Project Report
-                </a>
-            </div>
+        <div class="toolbar-group toolbar-sort">
+            <label for="sort-order">Sort</label>
+            <select id="sort-order">
+                <option value="default">Default Order</option>
+                <option value="newest">Newest First</option>
+                <option value="oldest">Oldest First</option>
+            </select>
         </div>
-    
-    <div class="project">
+        <div class="toolbar-group toolbar-count">
+            <label>Showing</label>
+            <div class="project-count" id="project-count">0 projects</div>
+        </div>
+    </div>
+
+    <div id="project-list">
+    <div class="project" data-featured="true" data-playable="true" data-group="personal" data-date="2024-08">
         <div class="project-header">
             <div class="language" style="background: #00589c">
                 <i class="fas fa-code"></i> C++
@@ -173,7 +83,7 @@
         </div>
         <h2 class="project-name">STARGLIDE for Nintendo 3DS and PC</h2>
         <div class="project-images">
-            <img src="assets/starglideHome.png" class="image-1">
+            <img src="assets/starglideHome.png" class="image-1" alt="">
             <video autoplay loop muted width="100%" class="image-2" poster="assets/starglideThumbnail.png">
                 <source src="assets/starglideDemo.webm" type="video/webm">
                 Your browser does not support the video tag.
@@ -205,20 +115,21 @@
             <p>
                 I was inspired by a course at university called <i>Software Engineering Design</i>, which teaches about
                 software design patterns and principles. This course emphasised the importance of creating adaptable
-                and scalable architectures, which motivated me to design a framework that makes software developement easier.
+                and scalable architectures, which motivated me to design a framework that makes software development
+                easier.
             </p>
         </div>
         <div class="project-buttons">
             <a href="https://github.com/AlexShem247/starglide-3ds" class="button github-button" target="_blank">
                 <i class="fab fa-github"></i> GitHub
             </a>
-            <a href="https://github.com/AlexShem247/starglide-3ds/releases" class="button download-button" target="_blank">
-                <i class="fas fa-download"></i> Download
+            <a href="artifacts/starglide/index.html" class="button play-button"
+                target="_blank">
+                <i class="fas fa-play"></i> Play Browser Remake (2026)
             </a>
         </div>
     </div>
-
-    <div class="project">
+    <div class="project" data-featured="true" data-playable="false" data-group="university-group" data-date="2024-03">
         <div class="project-header">
             <div class="language" style="background: #d4302e">
                 <i class="fas fa-code"></i> Scala
@@ -232,99 +143,121 @@
         </div>
         <h2 class="project-name">WACC Compiler and IDE</h2>
         <div class="project-images">
-            <img src="assets/waccEditor.png" class="image-3">
-            <img src="assets/waccRun.png" class="image-3">
+            <img src="assets/waccEditor.png" class="image-3" alt="">
+            <img src="assets/waccRun.png" class="image-3" alt="">
         </div>
         <div class="project-description">
             <p>
-                WACC Compiler and IDE is a group project developed for Imperial College London's Year 2 Laboratory module. 
-                The project includes a compiler for the WACC language, converting WACC code into x86-64 assembly code using 
+                WACC Compiler and IDE is a group project developed for Imperial College London's Year 2 Laboratory
+                module.
+                The project includes a compiler for the WACC language, converting WACC code into x86-64 assembly code
+                using
                 Scala and the Parsley library for parsing.
             </p>
             <p>
-                <i>Compiler developed using Scala with the Parsley library for parsing, and a Java Swing-based IDE for WACC.</i>
+                <i>Compiler developed using Scala with the Parsley library for parsing, and a Java Swing-based IDE for
+                    WACC.</i>
             </p>
 
             <p>
-                The IDE for WACC was an extension that I decided to make to enhance the overall development experience and
+                The IDE for WACC was an extension that I decided to make to enhance the overall development experience
+                and
                 showcase the capabilities of the WACC compiler. By creating a user-friendly interface with features like
                 syntax highlighting and real-time error checking, I aimed to make it easier for users to write and debug
                 WACC code, ultimately making the compiler seem more complete and professional.
             </p>
-    
+
             <div class="features-container">
                 <h2>Key Features</h2>
                 <ul class="features-list">
-                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Lexical Analysis and Parsing:</b> Implemented using the Parsley library for efficient and flexible parsing.</li>
-                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Semantic Analysis:</b> Includes type checking, scope management, and semantic error detection.</li>
-                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Code Generation:</b> Compiles WACC code to x86-64 assembly code, supporting basic optimisations.</li>
-                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Error Reporting:</b> Provides detailed error messages for both syntactic and semantic errors.</li>
-                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Modular Design:</b> Clean separation between different stages of compilation for maintainability and extensibility.</li>
+                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Lexical Analysis and Parsing:</b> Implemented using the Parsley
+                        library for efficient and flexible parsing.</li>
+                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Semantic Analysis:</b> Includes type checking, scope management, and
+                        semantic error detection.</li>
+                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Code Generation:</b> Compiles WACC code to x86-64 assembly code,
+                        supporting basic optimisations.</li>
+                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Error Reporting:</b> Provides detailed error messages for both
+                        syntactic and semantic errors.</li>
+                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Modular Design:</b> Clean separation between different stages of
+                        compilation for maintainability and extensibility.</li>
                 </ul>
             </div>
 
         </div>
         <div class="project-buttons">
-            <a href="https://github.com/AlexShem247/wacc-compiler" class="button github-button" target="_blank">
-                <i class="fab fa-github"></i> GitHub
+            <a href="https://github.com/AlexShem247/wacc-compiler/releases/download/v1.0/WACC_IDE.jar" class="button download-button" target="_blank">
+                <i class="fas fa-download"></i> Download IDE (.JAR)
             </a>
-            <a href="https://github.com/AlexShem247/wacc-compiler/releases" class="button download-button" target="_blank">
-                <i class="fas fa-download"></i> Download
+            <a href="https://google.com" class="button read-button"
+                target="_blank">
+                <i class="fa-brands fa-readme"></i> Read the Report
             </a>
         </div>
     </div>
-
-    <div class="project">
+    <div class="project" data-featured="true" data-playable="false" data-group="university-group" data-date="2024-06">
         <div class="project-header">
-            <div class="language" style="background: #ED8B00">
-                <i class="fa-brands fa-java"></i> Java
+            <div class="language" style="background: #4686b8">
+                <i class="fa-brands fa-python"></i> Python
             </div>
-            <div class="project-type">
-                <i class="fas fa-user"></i> Personal Project
+            <div class="project-type" style="background: #52bda9">
+                <i class="fas fa-users"></i>University Group Project
             </div>
             <div class="date">
-                <i class="fas fa-calendar-alt"></i> August 2023
+                <i class="fas fa-calendar-alt"></i> June 2024
             </div>
         </div>
-        <h2 class="project-name">Maze Raycasting Game</h2>
+        <h2 class="project-name">Wise Browse - An AI-Powered browser for Desktop</h2>
         <div class="project-images">
-            <img src="assets/raycastingHome.png" class="image-1">
-            <video autoplay loop muted width="100%" class="image-2" poster="assets/raycastingThumbnail.png">
-                <source src="assets/raycastingDemo.webm" type="video/webm">
-                Your browser does not support the video tag.
-            </video>
+            <img src="assets/wiseBrowsePromotional.png" class="image-1" alt="">
+            <img src="assets/wiseBrowseHome.png" class="image-2" alt="">
         </div>
         <div class="project-description">
             <p>
-                My Maze Raycasting Game is a maze exploration game where players navigate through
-                <b>randomly generated</b> mazes, collect all coins, and avoid zombies to progress
-                through increasingly difficult levels. The game leverages on
-                <a href="https://en.wikipedia.org/wiki/Ray_casting">Ray Casting</a>, a technique using in early video games to efficiently render a 3D world from a 2D
-                playing field, and a modified
-                <a href = "https://en.wikipedia.org/wiki/Maze_generation_algorithm">Depth-First Search (DFS) Maze Generation Algorithm</a>, offering an immersive gameplay experience.
+                Wise Browse is a user-friendly cross-platform desktop web browser designed to assist older
+                adults in navigating the internet with ease. By integrating advanced artificial
+                intelligence and a minimalist interface, Wise Browse provides step-by-step
+                guidance tailored to user needs, making digital interactions more accessible
+                and intuitive.
             </p>
             <p>
-                <i>Game written in Java using the libGDX library.</i>
+                <i>Application written in Python using the PyQt5 GUI toolkit, OpenAI API and Supabase.</i>
             </p>
 
             <p>
-                My fascination with 2.5D graphics and the complex mathematics behind them inspired me to create this game.
-                I have always been intrigued by how simple 2D elements can be transformed into immersive 3D-like environments
-                through techniques like ray casting. Additionally, I wanted to apply and deepen my understanding of algorithms
-                and mathematical concepts that I had previously studied.
+                Wise Browse is developed to address the challenges faced by older adults when using the
+                internet. The project is a collaborative effort by Imperial College London students
+                aimed at enhancing digital literacy and confidence.
             </p>
+
+            <div class="features-container">
+                <h2>Key Features</h2>
+                <ul class="features-list">
+                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>AI-Powered Assistance:</b> Leveraging OpenAI technology, Wise
+                        Browse's AI assistant reads and interprets website content to offer contextual help. It provides
+                        step-by-step instructions that adjust based on user actions and queries, making online tasks
+                        easier to complete.</li>
+                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Minimalist Interface:</b> The browser features a clean, simple
+                        interface to reduce cognitive load and emphasise essential functions. A streamlined side menu
+                        gives users easy access to the AI assistant and other key features.</li>
+                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Community-Driven FAQs:</b> Wise Browse includes a feature that
+                        displays Frequently Asked Questions (FAQs) from other users about the current website. This
+                        functionality fosters a sense of community and helps users resolve common issues more
+                        effectively.</li>
+                </ul>
+            </div>
+
         </div>
         <div class="project-buttons">
-            <a href="https://github.com/AlexShem247/maze-raycasting-game" class="button github-button" target="_blank">
+            <a href="https://github.com/AlexShem247/wise-browse" class="button github-button" target="_blank">
                 <i class="fab fa-github"></i> GitHub
             </a>
-            <a href="https://github.com/AlexShem247/maze-raycasting-game/releases" class="button download-button" target="_blank">
+            <a href="https://github.com/AlexShem247/wise-browse/releases" class="button download-button"
+                target="_blank">
                 <i class="fas fa-download"></i> Download
             </a>
         </div>
     </div>
-
-    <div class="project">
+    <div class="project" data-featured="false" data-playable="false" data-group="personal" data-date="2022-08">
         <div class="project-header">
             <div class="language" style="background: #4686b8">
                 <i class="fa-brands fa-python"></i> Python
@@ -338,11 +271,11 @@
         </div>
         <h2 class="project-name">Smart Retain - Note Maker and Revision Application</h2>
         <div class="project-images">
-            <img src="assets/smartRetainMenu.png" class="image-1">
-            <img src="assets/smartRetainHome.png" class="image-2">
+            <img src="assets/smartRetainMenu.png" class="image-1" alt="">
+            <img src="assets/smartRetainHome.png" class="image-2" alt="">
         </div>
         <div class="project-description">
-            <p class = "imageDesc">Screenshot of Start Menu and Home Page Screen</p>
+            <p class="imageDesc">Screenshot of Start Menu and Home Page Screen</p>
             <p>
                 Smart Retain is an innovative application designed to help users manage their notes, enhance
                 their learning experience, and track their performance in various courses or subjects. Smart
@@ -358,84 +291,225 @@
                     <source src="assets/smartRetainEditDemo.webm" type="video/webm">
                     Your browser does not support the video tag.
                 </video>
-            <video autoplay loop muted width="100%" class="image-1" poster="assets/smartRetainLearnThumbnail.png">
-                <source src="assets/smartRetainLearnDemo.webm" type="video/webm">
-                Your browser does not support the video tag.
-            </video>
+                <video autoplay loop muted width="100%" class="image-1" poster="assets/smartRetainLearnThumbnail.png">
+                    <source src="assets/smartRetainLearnDemo.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
             </div>
-            <p class = "imageDesc">Screenshot of Create Note and Learn Note Screen</p>
+            <p class="imageDesc">Screenshot of Create Note and Learn Note Screen</p>
 
             <p>
-                <div class="features-container">
-                    <h2>Features</h2>
-                    <ul class="features-list">
-                        <li>&nbsp&nbsp•&nbsp&nbsp<b>Create Notes:</b> Detailed input options to label notes with question, answer, keywords, topic, subtopic, and note type.</li>
-                        <li>&nbsp&nbsp•&nbsp&nbsp<b>PDF Viewer:</b> Read from textbooks or PDFs while making notes, eliminating the need to switch windows.</li>
-                        <li>&nbsp&nbsp•&nbsp&nbsp<b>Snippet Capture:</b> Take pictures from PDFs, add them directly to notes, and annotate them.</li>
-                        <li>&nbsp&nbsp•&nbsp&nbsp<b>Formula Capture:</b> Create formula-type notes, with symbols and units to allow random question generation on learn mode. The values will 
-                            be randomly generated using a provided reasonable value range and the answer calculated using the question formula. The formula can even be automatically rearranged for more questions.</li>
-                        <li>&nbsp&nbsp•&nbsp&nbsp<b>Learn Notes:</b> Machine learning-based suggestions for which notes to study, with customisable focus on topics and subtopics.</li>
-                        <li>&nbsp&nbsp•&nbsp&nbsp<b>Home Window:</b> Visual charts and graphs to track progress and identify areas for improvement.</li>
-                    </ul>
-                </div>
-            </p>
+            <div class="features-container">
+                <h2>Features</h2>
+                <ul class="features-list">
+                    <li>&nbsp&nbsp•&nbsp&nbsp<b>Create Notes:</b> Detailed input options to label notes with question,
+                        answer, keywords, topic, subtopic, and note type.</li>
+                    <li>&nbsp&nbsp•&nbsp&nbsp<b>PDF Viewer:</b> Read from textbooks or PDFs while making notes,
+                        eliminating the need to switch windows.</li>
+                    <li>&nbsp&nbsp•&nbsp&nbsp<b>Snippet Capture:</b> Take pictures from PDFs, add them directly to
+                        notes, and annotate them.</li>
+                    <li>&nbsp&nbsp•&nbsp&nbsp<b>Formula Capture:</b> Create formula-type notes, with symbols and units
+                        to allow random question generation on learn mode. The values will
+                        be randomly generated using a provided reasonable value range and the answer calculated using
+                        the question formula. The formula can even be automatically rearranged for more questions.</li>
+                    <li>&nbsp&nbsp•&nbsp&nbsp<b>Learn Notes:</b> Machine learning-based suggestions for which notes to
+                        study, with customisable focus on topics and subtopics.</li>
+                    <li>&nbsp&nbsp•&nbsp&nbsp<b>Home Window:</b> Visual charts and graphs to track progress and identify
+                        areas for improvement.</li>
+                </ul>
+            </div>
         </div>
         <div class="project-buttons">
-            <a href="https://github.com/AlexShem247/note-and-flashcard-maker" class="button github-button" target="_blank">
+            <a href="https://github.com/AlexShem247/note-and-flashcard-maker" class="button github-button"
+                target="_blank">
                 <i class="fab fa-github"></i> GitHub
             </a>
-            <a href="https://github.com/AlexShem247/note-and-flashcard-maker/releases" class="button download-button" target="_blank">
+            <a href="https://github.com/AlexShem247/note-and-flashcard-maker/releases" class="button download-button"
+                target="_blank">
                 <i class="fas fa-download"></i> Download
             </a>
         </div>
     </div>
-
-    <div class="project">
+    <div class="project" data-featured="false" data-playable="false" data-group="university-group" data-date="2025-03">
         <div class="project-header">
-            <div class="language" style="background: #e6cf1b">
-                <i class="fa-brands fa-js"></i> JavaScript
+            <div class="language" style="background: #017acc">
+                <i class="fa-brands fa-react"></i> React + Typescript
+            </div>
+            <div class="project-type" style="background: #52bda9">
+                <i class="fas fa-users"></i>University Group Project
+            </div>
+            <div class="date">
+                <i class="fas fa-calendar-alt"></i> March 2025
+            </div>
+        </div>
+        <h2 class="project-name">Response Area Sandbox for Lambda Feedback</h2>
+        <div class="project-images">
+            <img src="assets/storybook.png" class="image-3" alt="">
+            <img src="assets/lambda-feedback.png" class="image-3" alt="">
+        </div>
+        <div class="project-description">
+            <p>
+                The Response Area Sandbox is a development toolkit designed to streamline the creation of new interactive
+                question components (known as
+                <i>response area types</i>) for the Lambda Feedback educational platform. By providing an isolated, fully
+                simulated environment and an
+                extensible component-loading system, the project significantly reduces development time, improves
+                scalability, and enables seamless
+                integration of new content formats without disrupting the platform's live service.
+            </p>
+            <p>
+                <i>Application developed using React, Storybook, and a modular package architecture, with deployment and
+                    dynamic loading handled via AWS S3.</i>
+            </p>
+
+            <p>
+                The Lambda Feedback platform, used in STEM higher education and beyond, allows students to complete
+                academic exercises and receive real-time,
+                automated formative feedback. This project was developed as part of Imperial College London's Software
+                Engineering Group Project (SEGP) to
+                expand the platform's flexibility and improve the experience for external developers.
+            </p>
+
+            <div class="features-container">
+                <h2>Key Features</h2>
+                <ul class="features-list">
+                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Developer Sandbox:</b> Built a Storybook-based simulation of the
+                        Lambda Feedback environment, allowing developers to create and test response areas without
+                        running the full application stack, reducing setup time from days to hours.</li>
+                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Template Repository:</b> Provided a ready-to-use project template
+                        for building new response area types, complete with documentation and support for custom
+                        evaluation functions.</li>
+                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Response Area Registry:</b> Designed an interactive registry
+                        interface that previews and lists available response area types for teachers, improving
+                        discoverability and scalability over the legacy drop-down selector.</li>
+                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Dynamic Component Loading:</b> Implemented AWS S3 hosting for new
+                        components, enabling immediate use without redeploying the main application and minimising
+                        service disruption.</li>
+                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Package Extraction & Integration:</b> Refactored Lambda Feedback's
+                        mono-repo into modular packages to reduce code duplication, improve maintainability, and support
+                        the sandbox environment.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="project-buttons">
+            <a href="https://github.com/orgs/lambda-feedback-segp-sandbox/repositories" class="button github-button" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://github.com/lambda-feedback-segp-sandbox/user-documentation/blob/main/segp-report.pdf"
+                class="button read-button" target="_blank">
+                <i class="fa-brands fa-readme"></i> Read the Project Report
+            </a>
+        </div>
+    </div>
+    <div class="project" data-featured="false" data-playable="true" data-group="personal" data-date="2020-11">
+        <div class="project-header">
+            <div class="language" style="background: #4686b8">
+                <i class="fa-brands fa-python"></i> Python
             </div>
             <div class="project-type">
                 <i class="fas fa-user"></i> Personal Project
             </div>
             <div class="date">
-                <i class="fas fa-calendar-alt"></i> January 2022
+                <i class="fas fa-calendar-alt"></i> November 2020
             </div>
         </div>
-        <h2 class="project-name">Dots and Boxes Remastered</h2>
+        <h2 class="project-name">Snappy Triggers</h2>
         <div class="project-images">
-            <img src="assets/dotsAndBoxesLogo.png" class="image-1">
-            <video autoplay loop muted width="100%" class="image-2" poster="assets/dotsAndBoxesThumbnail.png">
-                <source src="assets/dotsAndBoxesDemo.webm" type="video/webm">
+            <img src="assets/snappyTriggersHome.png" class="image-1" alt="">
+            <video autoplay loop muted width="100%" class="image-2" poster="assets/snappyTriggersThumbnail.png">
+                <source src="assets/snappyTriggersDemo.webm" type="video/webm">
                 Your browser does not support the video tag.
             </video>
         </div>
         <div class="project-description">
             <p>
-                Dots and Boxes Remastered is a JavaScript-based web game that allows players to enjoy the classic
-                game of Dots and Boxes with new mechanics. Players take turns connecting dots with lines to form boxes,
-                but in this remastered version, some boxes contain power-ups that can influence the game's outcome in
-                surprising ways.
-            </p>
-            <p>
-                <i>Available to play in browser: <a href="https://alexshem247.github.io/dots-and-boxes-remastered/">Dots and Boxes Remastered</a></i>
+                Snappy Triggers is a fast-paced shooter where players face off against various enemies across multiple
+                rounds. Each round presents unique challenges and themes, with a final boss round that tests your skills
+                to the limit. Earn points for each enemy you defeat and aim to achieve the highest score.
             </p>
 
             <p>
-                Game written using HTML, CSS and JavaScript. 
+                <i>Game written in Python 3.6 using the Pygame framework.</i>
             </p>
+            <p>
+                You can create and login into to your Snappy Trigger Account, allowing you to create
+                a profile and save your scores to the global leaderboards, implemented using EZSheets -
+                a Python Google Sheets API.
+            </p>
+            <p>Snappy Triggers was the project I developed for my A-Level Computer Science coursework.</p>
         </div>
         <div class="project-buttons">
-            <a href="https://github.com/AlexShem247/dots-and-boxes-remastered" class="button github-button" target="_blank">
+            <a href="https://github.com/AlexShem247/snappy-triggers" class="button github-button" target="_blank">
                 <i class="fab fa-github"></i> GitHub
             </a>
-            <a href="https://alexshem247.github.io/dots-and-boxes-remastered/" class="button play-button" target="_blank">
-                <i class="fas fa-play"></i> Play Online
+            <a href="artifacts/snappy-triggers/index.html" class="button play-button"
+                target="_blank">
+                <i class="fas fa-play"></i> Play Browser Remake (2026)
             </a>
         </div>
     </div>
+    <div class="project" data-featured="false" data-playable="true" data-group="personal" data-date="2023-08">
+        <div class="project-header">
+            <div class="language" style="background: #ED8B00">
+                <i class="fa-brands fa-java"></i> Java
+            </div>
+            <div class="project-type">
+                <i class="fas fa-user"></i> Personal Project
+            </div>
+            <div class="date">
+                <i class="fas fa-calendar-alt"></i> August 2023
+            </div>
+        </div>
+        <h2 class="project-name">Maze Raycasting Game</h2>
+        <div class="project-images">
+            <img src="assets/raycastingHome.png" class="image-1" alt="">
+            <video autoplay loop muted width="100%" class="image-2" poster="assets/raycastingThumbnail.png">
+                <source src="assets/raycastingDemo.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="project-description">
+            <p>
+                My Maze Raycasting Game is a maze exploration game where players navigate through
+                <b>randomly generated</b> mazes, collect all coins, and avoid zombies to progress
+                through increasingly difficult levels. The game leverages on
+                <a href="https://en.wikipedia.org/wiki/Ray_casting">Ray Casting</a>, a technique using in early video
+                games to efficiently render a 3D world from a 2D
+                playing field, and a modified
+                <a href="https://en.wikipedia.org/wiki/Maze_generation_algorithm">Depth-First Search (DFS) Maze
+                    Generation Algorithm</a>, offering an immersive gameplay experience.
+            </p>
+            <p>
+                <i>Game written in Java using the libGDX library.</i>
+            </p>
 
-    <div class="project">
+            <p>
+                My fascination with 2.5D graphics and the complex mathematics behind them inspired me to create this
+                game.
+                I have always been intrigued by how simple 2D elements can be transformed into immersive 3D-like
+                environments
+                through techniques like ray casting. Additionally, I wanted to apply and deepen my understanding of
+                algorithms
+                and mathematical concepts that I had previously studied.
+            </p>
+            <p>
+                <i>
+                    Note: Contains third-party assets inspired by or sourced from Minecraft. All rights belong to
+                    Mojang Studios.
+                </i>
+            </p>
+        </div>
+        <div class="project-buttons">
+            <a href="https://github.com/AlexShem247/maze-raycasting-game" class="button github-button" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="artifacts/maze-raycasting-game/index.html" class="button play-button"
+                target="_blank">
+                <i class="fas fa-play"></i> Play Browser Remake (2026)
+            </a>
+        </div>
+    </div>
+    <div class="project" data-featured="false" data-playable="true" data-group="personal" data-date="2021-07">
         <div class="project-header">
             <div class="language" style="background: #4686b8">
                 <i class="fa-brands fa-python"></i> Python
@@ -449,7 +523,7 @@
         </div>
         <h2 class="project-name">Plane Mania for PC and Mobile</h2>
         <div class="project-images">
-            <img src="assets/planeManiaHome.png" class="image-1">
+            <img src="assets/planeManiaHome.png" class="image-1" alt="">
             <video autoplay loop muted width="100%" class="image-2" poster="assets/planeManiaThumbnail.png">
                 <source src="assets/planeManiaDemo.webm" type="video/webm">
                 Your browser does not support the video tag.
@@ -472,18 +546,24 @@
                 seamlessly on Windows, macOS, Linux, Android, and iOS. This allowed me to write Plane Mania for both
                 platforms using the same codebase.
             </p>
+            <p>
+                <i>
+                    Note: Contains third-party assets, including Nintendo artwork and sound effects, used for
+                    non-commercial educational purposes.
+                </i>
+            </p>
         </div>
         <div class="project-buttons">
             <a href="https://github.com/AlexShem247/plane-mania" class="button github-button" target="_blank">
                 <i class="fab fa-github"></i> GitHub
             </a>
-            <a href="https://github.com/AlexShem247/plane-mania/releases" class="button download-button" target="_blank">
-                <i class="fas fa-download"></i> Download
+            <a href="artifacts/plane-mania/index.html" class="button play-button"
+                target="_blank">
+                <i class="fas fa-play"></i> Play Browser Remake (2026)
             </a>
         </div>
     </div>
-
-    <div class="project">
+    <div class="project" data-featured="false" data-playable="false" data-group="personal" data-date="2024-12">
         <div class="project-header">
             <div class="language" style="background: #4686b8">
                 <i class="fa-brands fa-python"></i> Python
@@ -492,46 +572,216 @@
                 <i class="fas fa-user"></i> Personal Project
             </div>
             <div class="date">
-                <i class="fas fa-calendar-alt"></i> November 2020
+                <i class="fas fa-calendar-alt"></i> December 2024
             </div>
         </div>
-        <h2 class="project-name">Snappy Triggers</h2>
+        <h2 class="project-name">Wine Origin Classifier: Predicting Country of Origin of Wines using ML and LLMs</h2>
         <div class="project-images">
-            <img src="assets/snappyTriggersHome.png" class="image-1">
-            <video autoplay loop muted width="100%" class="image-2" poster="assets/snappyTriggersThumbnail.png">
-                <source src="assets/snappyTriggersDemo.webm" type="video/webm">
+            <img src="assets/decision_tree.png" class="image-3" alt="">
+            <embed src="assets/report.pdf" width="600" height="500" type="application/pdf">
+        </div>
+        <div class="project-description">
+            <p>
+                The Wine Origin Classifier is a machine learning project aimed at predicting the country of origin of
+                wines based on a dataset of wine reviews.
+                The goal was to build a classification model using both traditional machine learning techniques and
+                advanced natural language processing (NLP) methods,
+                particularly Large Language Models (LLMs), to extract features from the wine descriptions.
+            </p>
+            <p>
+                <i>Developed in Python using Scikit-learn, Pandas, OpenAI API and Graphviz libraries.</i>
+            </p>
+
+            <p>
+                The dataset includes five columns: Country (target), Description, Points, Price, and Variety.
+                A key challenge was the data imbalance, where certain countries (such as Spain, France, and Italy) were
+                underrepresented.
+                I addressed this by using weighted evaluation metrics and experimenting with different feature
+                engineering and model selection techniques to improve the performance on underrepresented classes.
+            </p>
+
+            <p>
+                A major component of the project was utilising NLP techniques to extract features from the textual
+                descriptions of the wines.
+                These features included flavor profiles, texture, acidity, and aging potential, which vary across
+                regions and can indicate the country of origin.
+                I also explored how LLMs can be integrated into traditional ML pipelines to enhance text feature
+                extraction.
+            </p>
+
+            <div class="features-container">
+                <h2>Key Features</h2>
+                <ul class="features-list">
+                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Data Preprocessing and Imbalance Handling:</b> Dealt with class
+                        imbalance through weighted metrics and techniques to improve model fairness.</li>
+                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Textual Feature Extraction:</b> Used NLP techniques to extract
+                        relevant features from the wine descriptions, such as flavor profiles, texture, and
+                        region-specific terms.</li>
+                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Large Language Model Integration:</b> Explored the use of LLMs for
+                        enhanced feature extraction and improved classification performance.</li>
+                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Model Evaluation:</b> Evaluated multiple models, focusing on
+                        performance across all classes, particularly underrepresented ones.</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="project-buttons">
+            <a href="https://github.com/AlexShem247/wine-origin-classifier" class="button github-button"
+                target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://github.com/AlexShem247/wine-origin-classifier/blob/main/report/report.pdf"
+                class="button read-button" target="_blank">
+                <i class="fa-brands fa-readme"></i> Read the Project Report
+            </a>
+        </div>
+    </div>
+    <div class="project" data-featured="false" data-playable="true" data-group="personal" data-date="2022-01">
+        <div class="project-header">
+            <div class="language" style="background: #e6cf1b">
+                <i class="fa-brands fa-js"></i> JavaScript
+            </div>
+            <div class="project-type">
+                <i class="fas fa-user"></i> Personal Project
+            </div>
+            <div class="date">
+                <i class="fas fa-calendar-alt"></i> January 2022
+            </div>
+        </div>
+        <h2 class="project-name">Dots and Boxes Remastered</h2>
+        <div class="project-images">
+            <img src="assets/dotsAndBoxesLogo.png" class="image-1" alt="">
+            <video autoplay loop muted width="100%" class="image-2" poster="assets/dotsAndBoxesThumbnail.png">
+                <source src="assets/dotsAndBoxesDemo.webm" type="video/webm">
                 Your browser does not support the video tag.
             </video>
         </div>
         <div class="project-description">
             <p>
-                Snappy Triggers is a fast-paced shooter where players face off against various enemies across multiple
-                rounds. Each round presents unique challenges and themes, with a final boss round that tests your skills
-                to the limit. Earn points for each enemy you defeat and aim to achieve the highest score.
+                Dots and Boxes Remastered is a JavaScript-based web game that allows players to enjoy the classic
+                game of Dots and Boxes with new mechanics. Players take turns connecting dots with lines to form boxes,
+                but in this remastered version, some boxes contain power-ups that can influence the game's outcome in
+                surprising ways.
+            </p>
+            <p>
+                <i>Available to play in browser: <a href="https://alexshem247.github.io/dots-and-boxes-remastered/">Dots
+                        and Boxes Remastered</a></i>
             </p>
 
             <p>
-                <i>Game written in Python 3.6 using the Pygame framework.</i>
+                Game written using HTML, CSS and JavaScript.
             </p>
-            <p>
-                You can create and login into to your Snappy Trigger Account, allowing you to create
-                a profile and save your scores to the global leaderboards, implented using EZSheets -
-                a Python Google Sheets API.
-            </p>
-            <p>Snappy Triggers was the project I developed for my A-Level Computer Science coursework.</p>
         </div>
         <div class="project-buttons">
-            <a href="https://github.com/AlexShem247/snappy-triggers" class="button github-button" target="_blank">
+            <a href="https://github.com/AlexShem247/dots-and-boxes-remastered" class="button github-button"
+                target="_blank">
                 <i class="fab fa-github"></i> GitHub
             </a>
-            <a href="https://github.com/AlexShem247/snappy-triggers/releases" class="button download-button" target="_blank">
-                <i class="fas fa-download"></i> Download
+            <a href="https://alexshem247.github.io/dots-and-boxes-remastered/" class="button play-button"
+                target="_blank">
+                <i class="fas fa-play"></i> Play Online
             </a>
         </div>
     </div>
-    
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const projectList = document.getElementById("project-list");
+            const projects = Array.from(projectList.querySelectorAll(".project"));
+            const filterButtons = Array.from(document.querySelectorAll(".filter-button"));
+            const sortSelect = document.getElementById("sort-order");
+            const projectCount = document.getElementById("project-count");
+
+            let activeFilter = "featured";
+            let activeSort = "default";
+
+            projects.forEach(function (project, index) {
+                project.dataset.originalOrder = String(index);
+                if (!project.querySelector(".project-number")) {
+                    const projectNumber = document.createElement("div");
+                    projectNumber.className = "project-number";
+                    project.appendChild(projectNumber);
+                }
+            });
+
+            function matchesFilter(project, filter) {
+                if (filter === "all") {
+                    return true;
+                }
+                if (filter === "featured") {
+                    return project.dataset.featured === "true";
+                }
+                if (filter === "playable") {
+                    return project.dataset.playable === "true";
+                }
+                return project.dataset.group === filter;
+            }
+
+            function sortProjects(list, sortMode) {
+                if (sortMode === "newest") {
+                    return list.sort(function (a, b) {
+                        return b.dataset.date.localeCompare(a.dataset.date);
+                    });
+                }
+                if (sortMode === "oldest") {
+                    return list.sort(function (a, b) {
+                        return a.dataset.date.localeCompare(b.dataset.date);
+                    });
+                }
+                return list.sort(function (a, b) {
+                    return Number(a.dataset.originalOrder) - Number(b.dataset.originalOrder);
+                });
+            }
+
+            function renderProjects() {
+                const visibleProjects = projects.filter(function (project) {
+                    return matchesFilter(project, activeFilter);
+                });
+                const sortedProjects = sortProjects(visibleProjects.slice(), activeSort);
+
+                sortedProjects.forEach(function (project) {
+                    projectList.appendChild(project);
+                    project.style.display = "";
+                });
+
+                sortedProjects.forEach(function (project, index) {
+                    const projectNumber = project.querySelector(".project-number");
+                    projectNumber.textContent = String(index + 1);
+                });
+
+                projects.forEach(function (project) {
+                    if (!visibleProjects.includes(project)) {
+                        project.style.display = "none";
+                    }
+                });
+
+                projectCount.textContent = visibleProjects.length === 1
+                    ? "1 project"
+                    : visibleProjects.length + " projects";
+            }
+
+            filterButtons.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    activeFilter = button.dataset.filter;
+                    filterButtons.forEach(function (item) {
+                        item.classList.toggle("active", item === button);
+                    });
+                    renderProjects();
+                });
+            });
+
+            sortSelect.addEventListener("change", function () {
+                activeSort = sortSelect.value;
+                renderProjects();
+            });
+
+            renderProjects();
+        });
+    </script>
 </body>
 <footer>
-    <p>&copy; 2025 Alexander Shemaly</p>
+    <p>&copy; 2026 Alexander Shemaly</p>
 </footer>
+
 </html>
