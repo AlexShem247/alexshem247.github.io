@@ -35,9 +35,6 @@
                     <a href="https://github.com/AlexShem247" class="contact-link">
                         <i class="fab fa-github"></i> GitHub&nbsp
                     </a>
-                    <a href="mailto:ashem747@gmail.com" class="contact-link">
-                        <i class="fas fa-envelope"></i> ashem747@gmail.com
-                    </a>
                 </p>
             </div>
         </div>
@@ -50,7 +47,7 @@
                 <button type="button" class="filter-button active" data-filter="featured"><i class="fas fa-heart"></i> Featured</button>
                 <button type="button" class="filter-button" data-filter="playable"><i class="fas fa-gamepad"></i> Playable</button>
                 <button type="button" class="filter-button" data-filter="personal"><i class="fas fa-user"></i> Personal</button>
-                <button type="button" class="filter-button" data-filter="university-group"><i class="fas fa-users"></i> University Group</button>
+                <button type="button" class="filter-button" data-filter="university-group"><i class="fas fa-graduation-cap"></i> University</button>
                 <button type="button" class="filter-button" data-filter="all">All</button>
             </div>
         </div>
@@ -69,6 +66,55 @@
     </div>
 
     <div id="project-list">
+    <div class="project" data-featured="true" data-playable="false" data-group="university-group" data-date="2026-06">
+        <div class="project-header">
+            <div class="language" style="background: #4686b8">
+                <i class="fa-brands fa-python"></i> Python
+            </div>
+            <div class="project-type" style="background: #52bda9">
+                <i class="fas fa-graduation-cap"></i>University Project
+            </div>
+            <div class="date">
+                <i class="fas fa-calendar-alt"></i> June 2026
+            </div>
+        </div>
+        <h2 class="project-name">Catan Explainable AI Tutor</h2>
+        <div class="project-images">
+            <img src="assets/catanHome.png" class="image-1" alt="">
+            <video autoplay loop muted width="100%" class="image-2" poster="assets/catanDemoThumbnail.png">
+                <source src="assets/catanDemo.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="project-description">
+            <p> Catan Explainable AI Tutor is my Master's dissertation project, which focused on developing an AI tutor for the board game <i>Settlers of Catan</i>. The system provides strategic recommendations and explanations to help players improve their decision-making and better understand the game. </p>
+
+            <p>
+                It features a complete implementation of Catan, including AI opponents, resource management, trading, building mechanics, development cards and an interactive tutor mode. Players can compare their decisions with the AI's recommendations, receive feedback on their moves and explore alternative strategies through visual game-state analysis.
+            </p>
+
+            <p>
+                <i>Application written in Python using PyQt6 for the graphical user interface.</i>
+            </p>
+
+            <p>
+                The AI tutor uses a planning-based decision-making system that analyses the current game state and evaluates long-term strategic options. Its decision-making model was refined through evolutionary optimisation using thousands of simulated games, improving gameplay strength while maintaining explainable recommendations.
+            </p>
+
+            <p>
+                The project demonstrates how explainable AI can make complex strategy games more accessible and effective as educational tools.
+            </p>
+        </div>
+        <div class="project-buttons">
+            <a href="https://github.com/AlexShem247/a-catan-tutor" class="button github-button" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://github.com/AlexShem247/a-catan-tutor/releases/tag/v1.1-catan-tutor" class="button download-button"
+                target="_blank">
+                <i class="fas fa-download"></i> Download
+            </a>
+        </div>
+    </div>
     <div class="project" data-featured="true" data-playable="true" data-group="personal" data-date="2024-08">
         <div class="project-header">
             <div class="language" style="background: #00589c">
@@ -155,7 +201,7 @@
                 Scala and the Parsley library for parsing.
             </p>
             <p>
-                <i>Compiler developed using Scala with the Parsley library for parsing, and a Java Swing-based IDE for
+                <i>Compiler developed using Scala with the Parsley library for parsing and a Java Swing-based IDE for
                     WACC.</i>
             </p>
 
@@ -172,7 +218,7 @@
                 <ul class="features-list">
                     <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Lexical Analysis and Parsing:</b> Implemented using the Parsley
                         library for efficient and flexible parsing.</li>
-                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Semantic Analysis:</b> Includes type checking, scope management, and
+                    <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Semantic Analysis:</b> Includes type checking, scope management and
                         semantic error detection.</li>
                     <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Code Generation:</b> Compiles WACC code to x86-64 assembly code,
                         supporting basic optimisations.</li>
@@ -278,8 +324,8 @@
             <p class="imageDesc">Screenshot of Start Menu and Home Page Screen</p>
             <p>
                 Smart Retain is an innovative application designed to help users manage their notes, enhance
-                their learning experience, and track their performance in various courses or subjects. Smart
-                Retain combines note-taking, machine learning, and performance analytics to create an integrated
+                their learning experience and track their performance in various courses or subjects. Smart
+                Retain combines note-taking, machine learning and performance analytics to create an integrated
                 learning tool.
             </p>
             <p>
@@ -303,11 +349,11 @@
                 <h2>Features</h2>
                 <ul class="features-list">
                     <li>&nbsp&nbsp•&nbsp&nbsp<b>Create Notes:</b> Detailed input options to label notes with question,
-                        answer, keywords, topic, subtopic, and note type.</li>
+                        answer, keywords, topic, subtopic and note type.</li>
                     <li>&nbsp&nbsp•&nbsp&nbsp<b>PDF Viewer:</b> Read from textbooks or PDFs while making notes,
                         eliminating the need to switch windows.</li>
                     <li>&nbsp&nbsp•&nbsp&nbsp<b>Snippet Capture:</b> Take pictures from PDFs, add them directly to
-                        notes, and annotate them.</li>
+                        notes and annotate them.</li>
                     <li>&nbsp&nbsp•&nbsp&nbsp<b>Formula Capture:</b> Create formula-type notes, with symbols and units
                         to allow random question generation on learn mode. The values will
                         be randomly generated using a provided reasonable value range and the answer calculated using
@@ -354,11 +400,11 @@
                 <i>response area types</i>) for the Lambda Feedback educational platform. By providing an isolated, fully
                 simulated environment and an
                 extensible component-loading system, the project significantly reduces development time, improves
-                scalability, and enables seamless
+                scalability and enables seamless
                 integration of new content formats without disrupting the platform's live service.
             </p>
             <p>
-                <i>Application developed using React, Storybook, and a modular package architecture, with deployment and
+                <i>Application developed using React, Storybook and a modular package architecture, with deployment and
                     dynamic loading handled via AWS S3.</i>
             </p>
 
@@ -386,7 +432,7 @@
                         components, enabling immediate use without redeploying the main application and minimising
                         service disruption.</li>
                     <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Package Extraction & Integration:</b> Refactored Lambda Feedback's
-                        mono-repo into modular packages to reduce code duplication, improve maintainability, and support
+                        mono-repo into modular packages to reduce code duplication, improve maintainability and support
                         the sandbox environment.</li>
                 </ul>
             </div>
@@ -471,11 +517,11 @@
         <div class="project-description">
             <p>
                 My Maze Raycasting Game is a maze exploration game where players navigate through
-                <b>randomly generated</b> mazes, collect all coins, and avoid zombies to progress
+                <b>randomly generated</b> mazes, collect all coins and avoid zombies to progress
                 through increasingly difficult levels. The game leverages on
                 <a href="https://en.wikipedia.org/wiki/Ray_casting">Ray Casting</a>, a technique using in early video
                 games to efficiently render a 3D world from a 2D
-                playing field, and a modified
+                playing field and a modified
                 <a href="https://en.wikipedia.org/wiki/Maze_generation_algorithm">Depth-First Search (DFS) Maze
                     Generation Algorithm</a>, offering an immersive gameplay experience.
             </p>
@@ -543,7 +589,7 @@
             <p>
                 Kivy is an open-source Python framework designed for the rapid development of multi-touch applications.
                 It provides a flexible and highly customisable environment for building cross-platform apps that run
-                seamlessly on Windows, macOS, Linux, Android, and iOS. This allowed me to write Plane Mania for both
+                seamlessly on Windows, macOS, Linux android and iOS. This allowed me to write Plane Mania for both
                 platforms using the same codebase.
             </p>
             <p>
@@ -593,8 +639,8 @@
             </p>
 
             <p>
-                The dataset includes five columns: Country (target), Description, Points, Price, and Variety.
-                A key challenge was the data imbalance, where certain countries (such as Spain, France, and Italy) were
+                The dataset includes five columns: Country (target), Description, Points, Price and Variety.
+                A key challenge was the data imbalance, where certain countries (such as Spain, France and Italy) were
                 underrepresented.
                 I addressed this by using weighted evaluation metrics and experimenting with different feature
                 engineering and model selection techniques to improve the performance on underrepresented classes.
@@ -603,7 +649,7 @@
             <p>
                 A major component of the project was utilising NLP techniques to extract features from the textual
                 descriptions of the wines.
-                These features included flavor profiles, texture, acidity, and aging potential, which vary across
+                These features included flavor profiles, texture, acidity and aging potential, which vary across
                 regions and can indicate the country of origin.
                 I also explored how LLMs can be integrated into traditional ML pipelines to enhance text feature
                 extraction.
@@ -615,7 +661,7 @@
                     <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Data Preprocessing and Imbalance Handling:</b> Dealt with class
                         imbalance through weighted metrics and techniques to improve model fairness.</li>
                     <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Textual Feature Extraction:</b> Used NLP techniques to extract
-                        relevant features from the wine descriptions, such as flavor profiles, texture, and
+                        relevant features from the wine descriptions, such as flavor profiles, texture and
                         region-specific terms.</li>
                     <li>&nbsp;&nbsp;•&nbsp;&nbsp;<b>Large Language Model Integration:</b> Explored the use of LLMs for
                         enhanced feature extraction and improved classification performance.</li>

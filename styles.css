@@ -22,20 +22,20 @@ footer {
 }
 
 #profile {
-    width: 20%; /* Adjust the percentage as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-left: 5%; /* Space between the image and text */
-    margin-right: 5%; /* Space between the image and text */
+    width: 20%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .container {
     display: flex;
     align-items: center;
-    background-image: url("assets/london.png"); /* Path to your background image */
-    background-size: cover; /* Scale the image to cover the container */
-    background-position: center; /* Center the image within the container */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    padding: 20px; /* Add some padding to make sure content doesn't touch edges */
+    background-image: url("assets/london.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: multiply;
     min-height: 500px;
@@ -220,19 +220,19 @@ footer {
 }
 
 .github-button {
-    background: #333; /* GitHub button background */
+    background: #333;
 }
 
 .download-button {
-    background: #1e6c93; /* Download button background */
+    background: #1e6c93;
 }
 
 .play-button {
-    background: #0da410; /* Download button background */
+    background: #0da410;
 }
 
 .read-button {
-    background: #af0000; /* Download button background */
+    background: #af0000;
 }
 
 .button i {
@@ -240,21 +240,28 @@ footer {
 }
 
 .contact-info {
-    background-color: #fff; /* White background */
-    color: #000; /* Black text */
-    border-radius: 8px; /* Optional: rounded corners */
-    padding: 10px;
-    height: 50px;
-    margin: 20px auto; /* Center horizontally with margin */
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    padding: 16px 40px;
+    margin: 20px 0;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info p {
+    margin: 0;
 }
 
 .contact-info a {
-    color: #1e6c93; /* Blue color for links */
-    text-decoration: none; /* Remove underline from links */
+    color: #1e6c93;
+    text-decoration: none;
+    margin-left: 16px;
 }
 
 .contact-info a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
 }
 
 .features-list {
@@ -294,6 +301,7 @@ footer {
     }
 
     #profile {
+        width: min(70%, 260px);
         margin-left: 0;
         margin-right: 0;
     }
